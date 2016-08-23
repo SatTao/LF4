@@ -1,5 +1,14 @@
 import processing.serial.*;
 
+// TODO: adjust to include serial port changes for different operating systems and multi-port options
+
+String os=System.getProperty("os.name");
+print(os);
+
+//
+
+
+
 Serial myPort;
 PImage bg,red,green,blue,off;
 boolean redState, greenState, blueState;
