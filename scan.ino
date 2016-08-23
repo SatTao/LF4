@@ -2,8 +2,8 @@
 
 // By Leo Jofeh 2016
 
-const int reflectPin = A1;
-const int indicatorLED = 3;
+const int reflectPin = A0;
+const int indicatorLED = 12;
 
 int sensorValue = 0;
 int bestHigh = 0;
@@ -94,7 +94,7 @@ void use(int ra, int db){
   digitalWrite(indicatorLED, LOW);
   boolean on = false;
   
-  for (int i = 0; i < 500; i++) { // do this 50 times
+  for (int i = 0; i < 500; i++) { // do this 500 times
   
     sensorValue = analogRead(reflectPin);
     
